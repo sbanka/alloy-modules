@@ -26,6 +26,9 @@ declare "stack" {
         username = json_decode(remote.http.config.content)["hmInstancePromId"]
         password = argument.token.value
       }
+      metadata_config {
+        send_interval = "30s"
+      }
     }
   }
 
